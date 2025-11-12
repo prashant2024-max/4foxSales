@@ -38,27 +38,54 @@
     :root{
         --fs-17: 16px;
     }
-
+    
     .psFooterInfo{flex-wrap: wrap;}
-    .psFooteBox1 {max-width: calc(16% - 5px);width: 100%;}
-    .psFooteBox2 {max-width: max-content; width: 100%;}
-    .psFooteBox3 {max-width: max-content; width: 100%;}
-    .psFooteBox4 {max-width: calc(20% - 5px);width: 100%;}
-    .psFooteBox5 {max-width: calc(25% - 5px);width: 100%;}
+    .psFooteBox1, .psFooteBox2, .psFooteBox3, .psFooteBox4, .psFooteBox5 {max-width: calc(20% - 5px);width: 100%;}
     .psFootMediaIcon > ul{gap: 1em;}
     .psNewLetterBox{padding: 15px 0;}
 }
 
 @media screen and (max-width:1130px) {
-  
+    .psFooterInfo {row-gap: 30px; justify-content: space-between;}
+    .psFooteBox1, .psFooteBox2, .psFooteBox3, .psFooteBox4 {max-width: calc(25% - 20px);width: 100%;}
+    .psFooteBox5{max-width: 40%;}
+    .psFootNewInput{width: 100%;}
 }
 
 @media screen and (max-width:1024px) {
-  
+    .header{background: var(--white); padding: 0.5em 0;}
+    .menuSec {justify-content: end;display: flex;align-items: center;gap: 2em;}
+    .menuIcon, .menuClose, .showInHamMenu {display: block;}
+    .menuIcon{max-width: 40px; width: 100%; margin: 0;}
+    .menuClose{max-width: 40px; margin-left: auto;}
+    .menuCont {
+        opacity: 0;
+        align-items: start;
+        position: fixed;
+        z-index: 99;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        top: 0;
+        right: -9999px;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        max-width: 400px;
+        padding: 1em 1em 1em 2em;
+        transition: all 0.5s;
+    }
+    .menuCont.active {opacity: 1;right: 0;}
+    .headMenu > nav > ul {flex-direction: column;margin-bottom: 2em;margin-top: 3em; align-items: start;}
+    .headMenu > nav {margin: 0; }
 }
 
 @media screen and (max-width:992px) {
   
+}
+
+@media screen and (max-width:950px) {
+    .psFooterInfo {justify-content: start; column-gap: 19px;}
+    .psFooteBox1, .psFooteBox2, .psFooteBox3, .psFooteBox4, .psFooteBox5 {max-width: calc(32% - 10px);width: 100%;}
 }
 
 @media screen and (max-width:820px) {
@@ -69,12 +96,21 @@
   
 }
 
+@media screen and (max-width:610px) {
+    .siteLogo {max-width: 110px;width: 100%;}
+    .menuIcon {max-width: 35px;}
+
+    .psFooterInfo {justify-content: start; column-gap: 20px; row-gap: 40px;}
+    .psFooteBox1, .psFooteBox2, .psFooteBox3, .psFooteBox4, .psFooteBox5 {max-width: calc(50% - 10px);width: 100%;}
+}
+
 
 @media screen and (max-width:550px) {
   
 }
+
 @media screen and (max-width:500px) {
-  
+    .psFooteBox1, .psFooteBox2, .psFooteBox3, .psFooteBox4, .psFooteBox5 {max-width: calc(100% - 0px);width: 100%;}
 }
 
 @media screen and (max-width:428px){

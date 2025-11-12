@@ -106,7 +106,7 @@
 	--secondary-font: 'Rubik', sans-serif;
 	--teritory-font: 'Inter', sans-serif;
 
-
+    --fs-120: 120px;
 	--fs-h: 56px;
 	--fs-40: 40px;
 	--fs-44: 44px;
@@ -134,6 +134,7 @@
     --black: #000000;
     --gray: #323232;
     --gray-dark: #2b2b2b;
+    --gray-light: #979FB4;
     
     --bg-primary: #FFFBED;
     --bg-secondary: #FFF9E3;
@@ -226,7 +227,7 @@ q{quotes:"\201C" "\201D" "\2018" "\2019";}
 .textRight{text-align:right;}
 .textUp{text-transform:uppercase;}
 .bg-transparent{background-color:transparent;}
-.main-wrapper{max-width: calc(1600px - 60px);width:100%;margin:0 auto; padding: 0 30px;}
+.main-wrapper{max-width: 1660px;width:100%;margin:0 auto; padding: 0 30px;}
 .wrapper1336{max-width: 1836px;width:100%;margin:0 auto;}
 .wrapper1440{max-width: 1440px;width:100%;margin:0 auto;}
 .wrapper1300{max-width: 1300px;width:100%;margin:0 auto;}
@@ -259,4 +260,5 @@ body.menu-open{overflow:hidden;}
 
 
 
-.comBtn{padding: 12px 20px; background: linear-gradient(139.95deg, #DBA167 21.19%, #91602F 78.81%); border-radius: 88px; display: flex; justify-content: space-between; align-items: center; gap: 1em; line-height: 1.45; color: var(--white); font-family: var(--primary-font-bold);}
+.comBtn{width: max-content; padding: 12px 20px; background: linear-gradient(139.95deg, #DBA167 21.19%, #91602F 78.81%); border-radius: 88px; display: flex; justify-content: space-between; align-items: center; gap: 1em; line-height: 1.45; color: var(--white); font-family: var(--primary-font-bold);}
+.comBtnWhite{width: max-content; padding: 12px 20px; background: var(--white); border-radius: 88px; display: flex; justify-content: space-between; align-items: center; gap: 1em; line-height: 1.45; color: #344C00; font-family: var(--primary-font-bold);}

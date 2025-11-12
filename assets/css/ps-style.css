@@ -1,16 +1,44 @@
 /* Header */
-.header{padding-top: 16px;}
+.header{padding-top: 16px; position: fixed; top: 0; z-index: 1000; transition: all 0.3s ease;}
+.header.stickyHead {width: 100%;background: var(--white);box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;}
 .siteLogo{max-width: 131px; width: 100%;}
 .contactBtnBox{width: max-content; }
 .headerSec {display: flex; align-items: center;}
 .headMenu  > nav{margin: auto;}
 .headMenu  > nav > ul {display: flex; gap: 30px; align-items: center; justify-content: center;}
 .headMenu  > nav > ul > li a{font-size: var(--fs-19); font-family: var(--primary-font-medium); line-height: 1.35; color: var(--primary-txt);}
+.menu-overlay{position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.4); z-index: 95;}
 .menuIcon, .menuClose{display: none;}
 
 
+.comSecHead > h5{font-family: var(--primary-font-medium); color: var(--secondary); letter-spacing: 1.63px; text-transform: uppercase; font-weight: var(--fw-regular); font-size: var(--fs-19); line-height: normal;  margin-bottom: 16px; text-align: center;}
+.comSecHead > h2{font-family: var(--primary-font-medium); font-size: var(--fs-36); line-height: 48px; letter-spacing: -1.2px; text-transform: capitalize; color: var(--primary-txt); font-weight: var(--fw-regular); text-align: center;}
+.comSecHead > h2 span{font-family: var(--primary-font-bold); color: var(--black);}
+
 /* Footer */
+.psFooter{padding-top: 7.56em;}
 .psFooter::before{content: ""; width: 100%; height: 100%; position: absolute; inset: 0; top: auto; background-color: #000;} 
+.psContactBoxWrapper{max-width: 1501px; margin: auto;}
+.psFootContactFrom{background: linear-gradient(95.02deg, #628D06 19.7%, #9FDB1E 100.36%); padding: 3.25em 3.25em 3.25em 6.25em; border-radius: 2.5em; display: flex; justify-content: space-between;}
+.psContactHeading {max-width: 477px; width: 100%;}
+.psContactHeading > h2{font-size: var(--fs-44); color: var(--white); letter-spacing: -1.2px; line-height: 1.68em; font-family: var(--primary-font-medium); font-weight: var(--fw-regular); margin-bottom: 7px;}
+.psContactHeading > p{font-family: var(--primary-font); font-size: var(--fs-22); font-weight: var(--fw-light); letter-spacing: -0.2px; line-height: 1.45; color: var(--white);}
+.psContactHeadBtn{margin-top: 2.5em;}
+.psFootFormBox{max-width: 592px; width: 100%; background-color: var(--white); border-radius: 12px; padding: 4px;} 
+.psFootFormBox > form{border-radius: 12px; border: 1px solid #E9EBF1; height: auto; padding: 3em;}
+.psFootmainForm > h3{font-size: var(--fs-20); letter-spacing: -0.33px; line-height: 1.6;}
+.psInputWrapBox {display: flex;flex-wrap: wrap; gap: 16px 24px; margin-top: 2.25em;}
+.psFormInput.col-50{max-width: calc(50% - 12px);}
+.psFormInput > input, .psFormInput select, .psFormInput textarea{padding: 15px 14px; border-radius: 12px;  background-color: #F7F8FA; border: none; appearance: none; font-size: var(--fs-14); color: var(--black); font-family: var(--primary-font-medium);}
+.psFormInput select{color: var(--gray-light);}
+.psFormInput > input::placeholder, .psFormInput select::placeholder, .psFormInput textarea::placeholder{font-size: var(--fs-14); color: var(--gray-light); font-family: var(--primary-font-medium);}
+.ftContactBtn > .comBtn{padding:  15px 52px;}
+.psRgtEmailBox{bottom: 1em; right: 3em;}
+.psRgtEmailBox > p{font-size: var(--fs-14); color: #979797; font-family: var(--primary-font-medium);}
+.psRgtEmailBox > a{font-size: var(--fs-14); color: var(--black); font-family: var(--primary-font-medium);}
+
+
+
 .psFooterInfo {display: flex; margin-top: 5em; margin-bottom: 1.75em; justify-content: space-between;}
 .psFootBox > h3{color: var(--white); opacity: 65%; font-family: var(--fw-light); font-weight: var(--fw-light); letter-spacing: -0.1px; margin-bottom: 1.05em;}
 .psFootBox > ul > li > a{color: var(--white);}
@@ -31,11 +59,87 @@
 .psFootNewLetter li:not(:last-child){margin-bottom: 15px;}
 .psNewLetterBox{display: flex; padding: 21px 0; gap: 10px; align-items: center; border-bottom: 0.5px solid #fff;}
 .psNewLetterBox > span:first-child {min-width: 18px;}
-.psNewLetterBox > .psFootNewInput > form > input{background: transparent; border: none; color: var(--white); font-size: var(--fs-15);}
+.psNewLetterBox > .psFootNewInput > form > input{background: transparent; border: none; color: var(--white); font-size: var(--fs-15); width: 100%;}
 .psNewLetterBox > .psFootNewInput > form > input ::placeholder{font-size: var(--fs-15);}
-.psNewLetterBox > span > button{width:max-content; background: transparent; border: none; color: #344C00; font-size: var(--fs-14); line-height: 30px; display: flex; align-items: center; justify-content: center; gap: 7px;}
+.psNewLetterBox > .psFootNewInput > form{display: flex; align-items: center; justify-content: center;}
+.psNewLetterBox > .psFootNewInput > form span button{width:max-content; background: transparent; border: none; color: #344C00; font-size: var(--fs-14); line-height: 30px; display: flex; align-items: center; justify-content: center; gap: 7px;}
 .psBottomFooter {border-top: 1px solid #272B39; padding: 2.25em 0;}
 .psBottomFooter > p{color: var(--white); font-size: var(--fs-16); }
 
 
 
+.psHeroSection{background: var(--bg-primary); padding-top: 5.256em;}
+.psHeroTxtInfo{display: flex; align-items: center;}
+.psHeroTxt{max-width: 945px; width: 100%;}
+.psHeroTxt > h1{font-size: var(--fs-h); margin-bottom: 30px; font-family: var(--primary-font-medium); font-weight: var(--fw-medium); letter-spacing: -0.75px;}
+.psHeroTxt > h1 > span{line-height: 113px; letter-spacing: -0.75px; font-family: var(--primary-font-bold); font-weight: var(--fw-bold);}
+.psHeroTxt > p{font-size: var(--fs-26); line-height: 1.75; margin-bottom: 30px;}
+.psHeroImgVid{max-width: 664px;}
+
+
+.psCouterSec{padding-top: 50px;}
+.psCounterBox {display: flex; justify-content: space-between;}
+.psCounterItem{max-width: 357px; width: 100%; display: flex; gap: 14px; background-color: #D6EDF3; border-radius: 30px; overflow-y: hidden;}
+.psCounterTxt {display: flex; flex-direction: column; justify-content: center;}
+.psCounterTxt > h2{font-size: var(--fs-40); font-family: var(--primary-font-bold); font-weight: var(--fw-regular); letter-spacing: -1.8px; line-height: 58px;}
+.psCounterTxt > p{font-size: var(--fs-18); font-family: var(--primary-font-medium); line-height: 32px; letter-spacing: -0.2px; color: var(--primary-txt);}
+.psWebCount{background-color: #FDD4CA;}
+.psAppCount{background-color: #B8EBE8;}
+.psLocationCount{background-color: #FFF3DB;}
+
+
+.psLogoMarqueeBox {display: flex;flex-direction: column;}
+.psMarquee-1{margin-bottom: 50px;}
+.psMarquee1Box li{margin-inline: 4em;}
+.psMarquee1Box > .slick-list > .slick-track{display: flex; align-items: center;}
+.psMarquee2Box{direction:rtl;overflow:hidden;}
+.psMarquee2Box li{margin-inline: 4em;}
+.psMarquee2Box > .slick-list > .slick-track{display: flex; align-items: center;}
+
+.psWhoWeHeadImg > .comSecHead > h5{text-align: left;}
+.psWhoWeHeadImg > .comSecHead > h2{text-align: left; padding-right: 2.5em;}
+.psWhoWeInfoBox{display: flex; justify-content: space-between; align-items: center;}
+.psWhoWeHeadImg {max-width: 575px; width: 100%;}
+.psWhoWeImg {margin-top: 4.25em;}
+.psWhoWeImgText{max-width: 797px; width: 100%;}
+.whoWeImges {margin-bottom: 3.25em;}
+.psText1Img{max-width: 411px; width: 100%;}
+.whoWeRightShape{max-width: 138px; width: 100%; position: absolute;top: -11%; right: -14%;}
+.psTextImg2{max-width: 241px; width: 100%; position: absolute; right: 0; bottom: 51px;}
+.whoWeText > p{font-size: var(--fs-19); font-family: var(--primary-font); line-height: 1.84; color: var(--primary-txt); font-weight: var(--fw-light); padding-right: 112px;}
+
+
+.psIndusType {display: flex; justify-content: space-between; margin-top: 5em;}
+.psIndusTypeItem {max-width: calc(234px - 34px); display: flex; flex-direction: column; justify-content: center; align-items: center; background: var(--bg-secondary); border-radius: 20px; padding: 26px 0;}
+.IndusTypeImg {width: 116px;height: 116px;border-radius: 100%;background: var(--bg-accent);padding: 2em; margin-bottom: 1.5em;}
+.psIndusTypeItem > p{font-size: var(--fs-22); font-family: var(--primary-font-medium); font-weight: var(--fw-regular); line-height: 34px; letter-spacing: -0.5px;}
+
+
+/* .psOurSolGallry{display: flex; margin-top: 5em; flex-wrap: wrap; justify-content: space-between;}
+.psOurSolItem{max-width: 500px; width: 100%;} */
+
+.psOurSolGallry {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 40px; 
+  margin-top: 5em;
+  align-items: start;
+  grid-auto-flow: dense;
+}
+.psOurSolItem {width: 100%;max-width: 500px;}
+
+/* .psOurSolItem:nth-of-type(2){
+    grid-row: span 2; 
+} */
+.ourSolImg{border-radius: 20px; overflow: hidden; margin-bottom: 20px;}
+.ourSolText{padding-left: 1.75em;}
+.ourSolText > p{font-size: var(--fs-15); line-height: 1.7; letter-spacing: -0.1px; font-family: var(--primary-font); color: var(--primary-txt);}
+.ourSolText > h3{font-size: var(--fs-24); font-family: var(--primary-font-bold); line-height: 1.4; letter-spacing: -0.5px;}
+.psOurGallBtn{margin-top: 5em; text-align: center;}
+.psOurGallBtn > .comBtn{margin: auto;}
+
+.psWinnSec{background: url(../images/winbg.png) no-repeat center / contain; margin: 10em 0;}
+.winImgUp{max-width: 153px; width: 100%; margin-right: 10em; border-radius: 28px; overflow: hidden; margin-block: 1em;}
+.winMiddle h2{width: max-content !important; font-family: var(--primary-font-medium); font-size: var(--fs-120); color: var(--gray); white-space: nowrap; margin: 0 10px;}
+.winMiddle > .slick-list > .slick-track{display: flex;}
+.winImgDown{max-width: 222px; width: 100%; margin-left: 5.68em; border-radius: 28px; overflow: hidden; margin-block: 1em;}
