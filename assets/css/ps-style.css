@@ -1,6 +1,6 @@
 /* Header */
 .header{padding-top: 16px; position: fixed; top: 0; z-index: 1000; transition: all 0.3s ease;}
-.header.stickyHead {width: 100%;background: var(--white);box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;}
+.header.stickyHead {width: 100%;background: var(--white);box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; padding: 16px 0;}
 .siteLogo{max-width: 131px; width: 100%;}
 .contactBtnBox{width: max-content; }
 .headerSec {display: flex; align-items: center;}
