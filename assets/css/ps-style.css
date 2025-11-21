@@ -202,3 +202,6 @@
 .trustedBySliderLft.slick-slider button{top: calc(100% + 41px + calc(58px / 2));width: 58px;height: 58px;border-radius: 100%;border: 1px solid #D0D0D0;background-size: 35px !important;}
 .trustedBySliderLft.slick-slider button.slick-prev{background-image: url(../images/sliderLftBtn.png);left: 0;}
 .trustedBySliderLft.slick-slider button.slick-next{background-image: url(../images/sliderRgtBtn.png);left: calc(30px + 58px);}
+
+
+/* marketing marquee */
