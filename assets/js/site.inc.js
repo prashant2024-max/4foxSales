@@ -74,7 +74,6 @@ $(document).ready(function () {
   $(".psMarquee1Box, .psMarquee2Box").slick("slickPlay");
 
 
-
   $(".winMiddle").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -103,6 +102,7 @@ $(document).ready(function () {
     fade: true,
     asNavFor: '.trustedBySliderRgt'
   });
+
   $('.trustedBySliderRgt').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -111,4 +111,38 @@ $(document).ready(function () {
     dots: false,
     fade: true,
   });
+
+
+  $('.caseStudySlideBox').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000
+  });
+
+
+  // marketing Marquee - Right to Left (reverse direction)
+  $(".markMarqueeBox").slick({
+    slidesToShow: 4.3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 0,
+    speed: 4000,
+    cssEase: "linear",
+    infinite: true,
+    arrows: false,
+    dots: false,
+    responsive: [
+      { breakpoint: 1400, settings: { slidesToShow: 5 } },
+      { breakpoint: 1300, settings: { slidesToShow: 4 } },
+      { breakpoint: 850, settings: { slidesToShow: 4 } },
+      { breakpoint: 611, settings: { slidesToShow: 3 } },
+      { breakpoint: 500, settings: { slidesToShow: 2 } },
+    ],
+  });
+  // });
+
+  $(".markMarqueeBox").slick("slickPlay");
+
 });

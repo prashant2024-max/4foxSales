@@ -17,7 +17,7 @@
 
 /* Footer */
 .psFooter{padding-top: 7.56em;}
-.psFooter::before{content: ""; width: 100%; height: 100%; position: absolute; inset: 0; top: auto; background-color: #000;} 
+.psFooter::before{content: ""; width: 100%; height: 67%; position: absolute; inset: 0; top: auto; background-color: #000;} 
 .psContactBoxWrapper{max-width: 1501px; margin: auto;}
 .psFootContactFrom{background: linear-gradient(95.02deg, #628D06 19.7%, #9FDB1E 100.36%); padding: 3.25em 3.25em 3.25em 6.25em; border-radius: 2.5em; display: flex; justify-content: space-between;}
 .psContactHeading {max-width: 477px; width: 100%;}
@@ -36,7 +36,6 @@
 .psRgtEmailBox{bottom: 1em; right: 3em;}
 .psRgtEmailBox > p{font-size: var(--fs-14); color: #979797; font-family: var(--primary-font-medium);}
 .psRgtEmailBox > a{font-size: var(--fs-14); color: var(--black); font-family: var(--primary-font-medium);}
-
 
 
 .psFooterInfo {display: flex; margin-top: 5em; margin-bottom: 1.75em; justify-content: space-between;}
@@ -158,7 +157,7 @@
 .latestUpdatesCardTitle > *{font-size: var(--fs-22);color: var(--primary-txt);font-family: var(--primary-font-bold);}
 .latestUpdatesCardDesc{margin-top: 1.05em;}
 .latestUpdatesCardDesc > p{font-size: var(--fs-17);font-family: var(--primary-font-light);line-height: 1.875;color: var(--primary-txt);opacity: 0.7;}
-.latestUpdatesBtn > a{}
+/* .latestUpdatesBtn > a{} */
 
 /* Best Campaigns */
 .campaignsContent{background-color: var(--accent);border-radius: 30px;padding: 3.5em 7.8125em;gap: 2em;}
@@ -179,6 +178,25 @@
 .videoContent .absolute:has(img){max-width: 135px;width: 100%;z-index: -1;}
 .videoContent .absolute.top{bottom: 94%;right: 50px;}
 .videoContent .absolute.bottom{bottom: -6%;left: 50px;}
+
+.psCaseStudyWrapper{max-width: 1735px; margin-left: auto;}
+.caseStudySlideBox  .draggable{padding-right: 194px;}
+.caseStudySlideBox{display: flex; padding-top: 70px;}
+.caseStudyItem{border-radius: 10px; overflow: hidden; margin-right: 40px;} 
+.caseClient1{ background-color: #1BAEE4;}
+.caseClient2{ background-color: #6B00DE;}
+.caseClient3{ background: linear-gradient(180deg, #087D42 0%, #36C980 100%);}
+.caseClient4{ background-color: #02A9EC;}
+.caseClient5{ background: linear-gradient(180deg, #FFBB4D 0%, #FF5353 100%);}
+.caseStudyInfo{width: 100%; padding: 3.625em 1em 0; color: var(--white);}
+.caseStudyInfo h3{font-size: var(--fs-20); line-height: 29px; letter-spacing: 0.5px; text-align: center; margin-bottom: 16px;}
+.caseStudyInfo p{font-size: var(--fs-17); line-height: 29px; letter-spacing: 0.2px; text-align: center;}
+.caseStudyImage {padding-top: 30px;}
+.caseStudyImage > img {max-width: 80%;}
+.caseStudyClient{max-width: 113px; width: 100%; position: absolute; top: 28%; right: 40px;}
+.caseClient3 .caseStudyClient{max-width: 144px; width: 100%; position: absolute; top: 28%; right: 40px;}
+.caseClient4 .caseStudyClient{max-width: 158px; width: 100%; position: absolute; top: 28%; right: 40px;}
+.caseClient5 .caseStudyClient{max-width: 80px; width: 100%; position: absolute; top: 28%; right: 40px;}
 
 /* Our Technology */
 .ourTech{margin-top: 5.6em;}
@@ -205,3 +223,5 @@
 
 
 /* marketing marquee */
+.markMarqueeBox li{font-size: var(--fs-90); font-family: var(--primary-font-bold); color: var(--black); text-align: center;}
+.markMarqueeBox li:nth-of-type(odd){color: #fff; -webkit-text-stroke: 1px #000; text-stroke: 1px #000;}
