@@ -19,7 +19,7 @@
 .psFooter{padding-top: 7.56em;}
 .psFooter::before{content: ""; width: 100%; height: 67%; position: absolute; inset: 0; top: auto; background-color: #000;} 
 .psContactBoxWrapper{max-width: 1501px; margin: auto;}
-.psFootContactFrom{background: linear-gradient(95.02deg, #628D06 19.7%, #9FDB1E 100.36%); padding: 3.25em 3.25em 3.25em 6.25em; border-radius: 2.5em; display: flex; justify-content: space-between;}
+.psFootContactFrom{background: linear-gradient(95.02deg, #628D06 19.7%, #9FDB1E 100.36%); padding: 3.25em 3.25em 3.25em 6.25em; border-radius: 2.5em; display: flex; justify-content: space-between; align-items: center;}
 .psContactHeading {max-width: 477px; width: 100%;}
 .psContactHeading > h2{font-size: var(--fs-44); color: var(--white); letter-spacing: -1.2px; line-height: 1.68em; font-family: var(--primary-font-medium); font-weight: var(--fw-regular); margin-bottom: 7px;}
 .psContactHeading > p{font-family: var(--primary-font); font-size: var(--fs-22); font-weight: var(--fw-light); letter-spacing: -0.2px; line-height: 1.45; color: var(--white);}
@@ -63,7 +63,7 @@
 .psNewLetterBox > .psFootNewInput > form{display: flex; align-items: center; justify-content: center;}
 .psNewLetterBox > .psFootNewInput > form span button{width:max-content; background: transparent; border: none; color: #344C00; font-size: var(--fs-14); line-height: 30px; display: flex; align-items: center; justify-content: center; gap: 7px;}
 .psBottomFooter {border-top: 1px solid #272B39; padding: 2.25em 0;}
-.psBottomFooter > p{color: var(--white); font-size: var(--fs-16); }
+.psBottomFooter > p{color: var(--white); font-size: var(--fs-16); text-align: center;}
 
 
 
@@ -78,7 +78,7 @@
 
 .psCouterSec{padding-top: 50px;}
 .psCounterBox {display: flex; justify-content: space-between;}
-.psCounterItem{max-width: 357px; width: 100%; display: flex; gap: 14px; background-color: #D6EDF3; border-radius: 30px; overflow-y: hidden;}
+.psCounterItem{max-width: 357px; width: 100%; display: flex; align-items: center; gap: 14px; background-color: #D6EDF3; border-radius: 30px; overflow-y: hidden;}
 .psCounterTxt {display: flex; flex-direction: column; justify-content: center;}
 .psCounterTxt > h2{font-size: var(--fs-40); font-family: var(--primary-font-bold); font-weight: var(--fw-regular); letter-spacing: -1.8px; line-height: 58px;}
 .psCounterTxt > p{font-size: var(--fs-18); font-family: var(--primary-font-medium); line-height: 32px; letter-spacing: -0.2px; color: var(--primary-txt);}
@@ -111,7 +111,7 @@
 .psIndusType {display: flex; justify-content: space-between; margin-top: 5em;}
 .psIndusTypeItem {max-width: calc(234px - 34px); display: flex; flex-direction: column; justify-content: center; align-items: center; background: var(--bg-secondary); border-radius: 20px; padding: 26px 0;}
 .IndusTypeImg {width: 116px;height: 116px;border-radius: 100%;background: var(--bg-accent);padding: 2em; margin-bottom: 1.5em;}
-.psIndusTypeItem > p{font-size: var(--fs-22); font-family: var(--primary-font-medium); font-weight: var(--fw-regular); line-height: 34px; letter-spacing: -0.5px;}
+.psIndusTypeItem > p{font-size: var(--fs-22); font-family: var(--primary-font-medium); font-weight: var(--fw-regular); line-height: 34px; letter-spacing: -0.5px; text-align: center;}
 
 
 /* .psOurSolGallry{display: flex; margin-top: 5em; flex-wrap: wrap; justify-content: space-between;}
@@ -197,10 +197,16 @@
 .caseClient3 .caseStudyClient{max-width: 144px; width: 100%; position: absolute; top: 28%; right: 40px;}
 .caseClient4 .caseStudyClient{max-width: 158px; width: 100%; position: absolute; top: 28%; right: 40px;}
 .caseClient5 .caseStudyClient{max-width: 80px; width: 100%; position: absolute; top: 28%; right: 40px;}
+.caseStudySlideBox .slick-dots{display: flex; max-width: 1600px; width: 100%;}
+.caseStudySlideBox .slick-dots li{width: 100%; margin: 0;}
+.caseStudySlideBox .slick-dots li button{width: 100%; height: 1px; border-radius: 0; border: none; background-color: #EDEDED; margin: 0; transition: all 0.5s linear;}
+.slick-dots li.slick-active button {height: 5px; border-radius: 50px; background: #dadada;}
 
 /* Our Technology */
 .ourTech{margin-top: 5.6em;}
 .ourTech > img{max-width: 1000px;margin-inline: auto;}
+
+
 
 /* Trused By */
 .trustedByBgImg{top: 0;left: 50%;transform: translateX(-50%);max-width: 1050px;}

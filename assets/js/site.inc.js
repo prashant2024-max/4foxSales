@@ -39,7 +39,7 @@ $(document).ready(function () {
     pauseOnHover: false,
     variableWidth: false,
     responsive: [
-      { breakpoint: 1400, settings: { slidesToShow: 5 } },
+      { breakpoint: 1600, settings: { slidesToShow: 5 } },
       { breakpoint: 1300, settings: { slidesToShow: 4 } },
       { breakpoint: 850, settings: { slidesToShow: 4 } },
       { breakpoint: 611, settings: { slidesToShow: 3 } },
@@ -62,8 +62,8 @@ $(document).ready(function () {
     variableWidth: false,
     rtl: true, // 👈 this makes it scroll in the opposite direction
     responsive: [
-      { breakpoint: 1400, settings: { slidesToShow: 5 } },
-      { breakpoint: 1300, settings: { slidesToShow: 4 } },
+      { breakpoint: 1600, settings: { slidesToShow: 5 } },
+      { breakpoint: 1536, settings: { slidesToShow: 4 } },
       { breakpoint: 850, settings: { slidesToShow: 4 } },
       { breakpoint: 611, settings: { slidesToShow: 3 } },
       { breakpoint: 500, settings: { slidesToShow: 2 } },
@@ -87,8 +87,8 @@ $(document).ready(function () {
     pauseOnHover: false,
     variableWidth: false,
     responsive: [
-      { breakpoint: 1400, settings: { slidesToShow: 5 } },
-      { breakpoint: 1300, settings: { slidesToShow: 4 } },
+      { breakpoint: 1600, settings: { slidesToShow: 5 } },
+      { breakpoint: 1536, settings: { slidesToShow: 4 } },
       { breakpoint: 850, settings: { slidesToShow: 4 } },
       { breakpoint: 611, settings: { slidesToShow: 3 } },
       { breakpoint: 500, settings: { slidesToShow: 2 } },
@@ -117,6 +117,7 @@ $(document).ready(function () {
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: false,
+    dots:true,
     autoplay: true,
     autoplaySpeed: 3000
   });
@@ -134,7 +135,7 @@ $(document).ready(function () {
     arrows: false,
     dots: false,
     responsive: [
-      { breakpoint: 1400, settings: { slidesToShow: 5 } },
+      { breakpoint: 1600, settings: { slidesToShow: 3.5 } },
       { breakpoint: 1300, settings: { slidesToShow: 4 } },
       { breakpoint: 850, settings: { slidesToShow: 4 } },
       { breakpoint: 611, settings: { slidesToShow: 3 } },

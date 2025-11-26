@@ -1,13 +1,45 @@
+@media screen and (max-width:1728px) {
+    .psCaseStudyWrapper {max-width: 1664px;margin-left: auto;}
+
+    .psFootContactFrom{padding: 3.25em;}
+}
+
 @media screen and (max-width:1680px) {
+    .psCaseStudyWrapper {max-width: 1640px;margin-left: auto;}
 }
 
 @media screen and (max-width:1600px) {
-    .main-wrapper{max-width: calc(1540px - 60px);}
+    .main-wrapper{max-width: calc(1540px - 30px); padding: 0 15px;}
+
+    .psOurSolGallry{grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));}
+
+    .psCaseStudyWrapper {max-width: 1536px;margin-left: auto;}
 }
 
-@media screen and (max-width:1540px) {
+@media screen and (max-width:1536px) {
+    :root{
+        --fs-120: 110px;
+        --fs-h: 49px;
+        --fs-40: 34px;
+        --fs-26: 22px;
+        --fs-22: 20px;
+    }
 
-    .psFooteBox4 {max-width: 297px;width: 100%;}
+    .main-wrapper {max-width: calc(1470px - 30px);padding: 0 15px;}
+
+    .psFooteBox4 {max-width: 297px;width: 100%;}   
+    
+    .psCounterItem{max-width: 325px;}
+
+    .psWhoWeHeadImg{max-width: 40%; width: 100%;}
+    .psWhoWeImgText {max-width: 50%;width: 100%;}
+    .psText1Img{max-width: 380px;width: 100%;}
+    .psIndusTypeItem{max-width: calc(220px - 38px);}
+    .IndusTypeImg{width: 100px; height: 100px;}
+
+    .psOurSolGallry {grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));}
+
+    .psFootFormBox{max-width: 640px;}
 }
 
 
@@ -15,12 +47,30 @@
   
 }
 
+@media screen and (max-width:1440px) {
+    .main-wrapper{padding: 0 30px;}
+
+    .psWhoWeImg{margin-top: 3.25em;}
+    .psText1Img {max-width: 360px; width: 100%;}
+
+    .IndusTypeImg{width: 75px; height: 75px; padding: 1.5em;}
+    .psIndusTypeItem {max-width: calc(215px - 38px);} 
+
+    .psOurSolGallry {grid-template-columns: repeat(auto-fit, minmax(415px, 1fr));}
+}
+
 @media screen and (max-width:1400px) {
-  
+    
 }
 
 @media screen and (max-width:1366px) {
-  
+    .psHeroImgVid {max-width: 580px;}
+
+    .psCounterItem {max-width: 300px;}
+    .psCounterImg{max-width: 125px;}
+
+    .psOurSolGallry {grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));}
+    .campaignsImg {max-width: 550px;}
 }
 
 @media screen and (max-width:1300px) {
@@ -43,6 +93,34 @@
     .psFooteBox1, .psFooteBox2, .psFooteBox3, .psFooteBox4, .psFooteBox5 {max-width: calc(20% - 5px);width: 100%;}
     .psFootMediaIcon > ul{gap: 1em;}
     .psNewLetterBox{padding: 15px 0;}
+}
+
+@media screen and (max-width: 1180px){
+    .psHeroTxt > h1 > span{line-height: normal; margin-bottom: 15px;}
+    .psHeroTxt > p{margin-bottom: 15px;}
+    .psHeroImgVid {max-width: 480px;}
+
+    .psCounterImg {max-width: 80px;}
+    .psCounterBox{gap: 15px;}
+    
+    .psWhoWeHeadImg > .comSecHead > h2{padding: 0;}
+    .psText1Img {max-width: 300px;width: 100%;}
+    .whoWeRightShape{max-width: 90px;}
+    .psTextImg2{max-width: 160px;}
+
+    .psIndusType { display: flex; justify-content: center; margin-top: 5em;flex-wrap: wrap;gap: 50px;}
+    .psIndusTypeItem { max-width: calc(25% - 38px);}
+    .psOurSolGallry {grid-template-columns: repeat(auto-fit, minmax(337px, 1fr));}
+
+    .trustedBySliderRgtComment > p{line-height: 2;}
+
+    .campaignsContent{padding: 2em;}
+    .campaignsTxt{max-width: 50%;}
+    .campaignsImg {max-width: 50%;}
+
+    .latestUpdatesCards{gap: 2.25em;}
+
+    .psIndusType{margin-top: 3em;}
 }
 
 @media screen and (max-width:1130px) {
