@@ -122,6 +122,29 @@ $(document).ready(function () {
     autoplaySpeed: 3000
   });
 
+  function initLateUpSlider() {
+    if ($(window).width() <= 820) {
+        if (!$('.latestUpdatesCards').hasClass('slick-initialized')) {
+            $('.latestUpdatesCards').slick({
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                arrows: false,
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 3000000
+            });
+        }
+    } else {
+        if ($('.latestUpdatesCards').hasClass('slick-initialized')) {
+            $('.latestUpdatesCards').slick('unslick'); // disable above 820px
+        }
+    }
+}
+
+initLateUpSlider();              // run on load
+$(window).resize(initLateUpSlider); // run on resize
+
+
 
   // marketing Marquee - Right to Left (reverse direction)
   $(".markMarqueeBox").slick({
@@ -142,6 +165,7 @@ $(document).ready(function () {
       { breakpoint: 500, settings: { slidesToShow: 2 } },
     ],
   });
+  
   // });
 
   $(".markMarqueeBox").slick("slickPlay");

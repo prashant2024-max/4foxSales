@@ -96,6 +96,16 @@
 }
 
 @media screen and (max-width: 1180px){
+     :root{
+        --fs-120: 100px;
+        --fs-90: 75px;
+        --fs-h: 50px;
+        --fs-44: 40px;
+        --fs-40: 36px;
+        --fs-36: 32px;
+        /* small fonts good enough no change */ 
+    }
+
     .psHeroTxt > h1 > span{line-height: normal; margin-bottom: 15px;}
     .psHeroTxt > p{margin-bottom: 15px;}
     .psHeroImgVid {max-width: 480px;}
@@ -123,6 +133,8 @@
 }
 
 @media screen and (max-width:1130px) {
+
+
     .psFooterInfo {row-gap: 30px; justify-content: space-between;}
     .psFooteBox1, .psFooteBox2, .psFooteBox3, .psFooteBox4 {max-width: calc(25% - 20px);width: 100%;}
     .psFooteBox5{max-width: 40%;}
@@ -166,7 +178,51 @@
 }
 
 @media screen and (max-width:820px) {
-  
+    :root{
+        --fs-120: 80px;
+        --fs-90: 60px;
+        --fs-h: 42px;
+        --fs-44: 36px;
+        --fs-40: 32px;
+        --fs-36: 28px;
+        --fs-26: 22px;
+        --fs-24: 20px;
+        --fs-22: 19px;
+        --fs-21: 18px;
+        --fs-20: 17px;
+        --fs-19: 16px;
+        /* 18–14 readable so minimum change */
+    }
+
+    .comSecHead > h2{line-height: 40px;}
+    .comSecHead > h5{margin-bottom: 10px;}
+
+    .psHeroTxtInfo{gap: 20px;}
+    .psHeroTxt {max-width: 100%; width: 100%;}
+    .psHeroTxt > h1{margin-bottom: 10px;}
+    .psHeroTxt > p{line-height: 1.35;}
+    .psHeroImgVid {max-width: 300px;}
+
+    .psCounterBox {flex-wrap: wrap;}
+    .psCounterItem {max-width: 49%;}
+    .psCounterImg {max-width: 155px;}
+
+    .psWhoWeHeadImg { max-width: 45%; width: 100%;}
+    .psWhoWeImg {margin-top: 1.25em;}
+    .whoWeText > p{padding-right: 0;}
+    .whoWeImges {margin-bottom: 1.25em;}
+    .psText1Img {max-width: 55%;width: 100%;}
+    .whoWeRightShape {max-width: 30%;}
+    .psTextImg2 {max-width: 28%;}
+
+    .psIndusType{gap: 23px;}
+    .psIndusTypeItem {max-width: calc(25% - 18px);}
+
+    .ourTech{margin-top: 2.6em;}
+
+    .campaignsContent{padding: 2.5em;}
+    .videoContent .absolute.bottom{bottom: -13%;}
+    .videoContent .absolute:has(img){max-width: 100px;}
 }
 
 @media screen and (max-width:768px) {
@@ -174,6 +230,25 @@
 }
 
 @media screen and (max-width:610px) {
+    :root{
+        --fs-120: 60px;
+        --fs-90: 45px;
+        --fs-h: 34px;
+        --fs-44: 30px;
+        --fs-40: 28px;
+        --fs-36: 26px;
+        --fs-26: 20px;
+        --fs-24: 18px;
+        --fs-22: 17px;
+        --fs-21: 16px;
+        --fs-20: 15px;
+        --fs-19: 15px;
+        --fs-18: 15px;
+        --fs-17: 14px;
+        --fs-16: 14px;
+        /* 14 & 15 are already small so kept close */
+    }
+
     .siteLogo {max-width: 110px;width: 100%;}
     .menuIcon {max-width: 35px;}
 
