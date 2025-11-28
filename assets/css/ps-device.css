@@ -218,6 +218,8 @@
     .psIndusType{gap: 23px;}
     .psIndusTypeItem {max-width: calc(25% - 18px);}
 
+    .psWinnSec{margin: 3.2em 0;}
+
     .ourTech{margin-top: 2.6em;}
 
     .campaignsContent{padding: 2.5em;}
@@ -233,30 +235,25 @@
 }
 
 @media screen and (max-width:768px) {
-  
+    .psHeroTxtInfo{flex-wrap: wrap;}
+    .psHeroTxt { max-width: 100%; width: 100%; padding: 50px 0;}
+    .psHeroImgVid{ max-width: 100%; margin: auto;}
+    .psCounterItem {max-width: 48%;}
+    .psCounterImg {max-width: 123px;}
+    .psCounterTxt{padding-right: 10px;}
+    .psIndusTypeItem {max-width: calc(32% - 18px);padding: 25px;}
 
-    .winImgUp{margin-right: 3em;}
-    .winImgDown{margin-left: 3em;}
+    .psOurSolGallry {grid-template-columns: repeat(auto-fit, minmax(329px, 1fr));}
+    .psOurGallBtn {margin-top: 4em; text-align: center;}
+
+    .winImgUp{margin-right: 3em; max-width: 120px;}
+    .winImgDown{margin-left: 3em; max-width: 170px;}
 
     .trustedBySliders{flex-wrap: wrap; gap: 3em;}
     .trustedBySliderLft {max-width: 100%;}
     .trustedBySliderRgt {max-width: 100%;}
     .trustedBySliderRgtCont{max-width: 100%; width: 100%;}
 
-    .trustedBySliderRgt {}
-    .trustedBySliderLft.slick-slider button.slick-next {
-        background-image: url(../images/sliderRgtBtn.png);
-        left: calc(30px + 58px);
-    }
-
-    .trustedBySliderLft.slick-slider button {
-        top: calc(100% + 41px + calc(58px / 2));
-        width: 58px;
-        height: 58px;
-        border-radius: 100%;
-        border: 1px solid #D0D0D0;
-        background-size: 35px !important;
-    }
 }
 
 @media screen and (max-width:610px) {
