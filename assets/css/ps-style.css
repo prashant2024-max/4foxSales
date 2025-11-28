@@ -200,7 +200,7 @@
 .caseStudySlideBox .slick-dots{display: flex; max-width: 1600px; width: 100%;}
 .caseStudySlideBox .slick-dots li{width: 100%; margin: 0;}
 .caseStudySlideBox .slick-dots li button{width: 100%; height: 1px; border-radius: 0; border: none; background-color: #EDEDED; margin: 0; transition: all 0.5s linear;}
-.slick-dots li.slick-active button {height: 5px; border-radius: 50px; background: #dadada;}
+.caseStudySlideBox .slick-dots li.slick-active button {height: 5px; border-radius: 50px; background: #dadada;}
 
 /* Our Technology */
 .ourTech{margin-top: 5.6em;}

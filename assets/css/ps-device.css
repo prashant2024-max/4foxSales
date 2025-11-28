@@ -223,10 +223,40 @@
     .campaignsContent{padding: 2.5em;}
     .videoContent .absolute.bottom{bottom: -13%;}
     .videoContent .absolute:has(img){max-width: 100px;}
+
+    .latestUpdatesCard{margin: 0 8px;}
+
+    .psFootContactFrom{flex-wrap: wrap;}
+    .psContactHeading {max-width: 100%;width: 100%; margin-bottom: 30px;}
+    .psContactHeading > h2{line-height: 1.38;}
+    .psContactHeadBtn {margin-top: 1.5em;}
 }
 
 @media screen and (max-width:768px) {
   
+
+    .winImgUp{margin-right: 3em;}
+    .winImgDown{margin-left: 3em;}
+
+    .trustedBySliders{flex-wrap: wrap; gap: 3em;}
+    .trustedBySliderLft {max-width: 100%;}
+    .trustedBySliderRgt {max-width: 100%;}
+    .trustedBySliderRgtCont{max-width: 100%; width: 100%;}
+
+    .trustedBySliderRgt {}
+    .trustedBySliderLft.slick-slider button.slick-next {
+        background-image: url(../images/sliderRgtBtn.png);
+        left: calc(30px + 58px);
+    }
+
+    .trustedBySliderLft.slick-slider button {
+        top: calc(100% + 41px + calc(58px / 2));
+        width: 58px;
+        height: 58px;
+        border-radius: 100%;
+        border: 1px solid #D0D0D0;
+        background-size: 35px !important;
+    }
 }
 
 @media screen and (max-width:610px) {
