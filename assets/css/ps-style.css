@@ -227,11 +227,12 @@
 .trustedBySliderRgtComment > p{font-size: calc(var(--fs-20) + 1px);color: var(--primary-txt);opacity: 0.7;line-height: 2.3;font-family: var(--primary-font-medium);}
 .trustedBySliderRgt{max-width: 43%;}
 .trustedBySliderLft{max-width: 35%;}
-.trustedBySliderLft.slick-slider button{top: calc(100% + 41px + calc(58px / 2));width: 58px;height: 58px;border-radius: 100%;border: 1px solid #D0D0D0;background-size: 35px !important;}
-.trustedBySliderLft.slick-slider button.slick-prev{background-image: url(../images/sliderLftBtn.png);left: 0;}
-.trustedBySliderLft.slick-slider button.slick-next{background-image: url(../images/sliderRgtBtn.png);left: calc(30px + 58px);}
+.trustedBySliderLft.slick-slider button, .trustedBySliderRgt.slick-slider button{top: calc(100% + 41px + calc(58px / 2));width: 58px;height: 58px;border-radius: 100%;border: 1px solid #D0D0D0;background-size: 35px !important;}
+.trustedBySliderLft.slick-slider button.slick-prev, .trustedBySliderRgt.slick-slider button.slick-prev{background-image: url(../images/sliderLftBtn.png);left: 0;}
+.trustedBySliderLft.slick-slider button.slick-next, .trustedBySliderRgt.slick-slider button.slick-next{background-image: url(../images/sliderRgtBtn.png);left: calc(30px + 58px);}
 
 
 /* marketing marquee */
-.markMarqueeBox li{font-size: var(--fs-90); font-family: var(--primary-font-bold); color: var(--black); text-align: center;}
+.markMarqueeBox .slick-list .slick-track{display: flex; gap: 20px;}
+.markMarqueeBox li{width: max-content !important; font-size: var(--fs-90); font-family: var(--primary-font-bold); color: var(--black); text-align: center;}
 .markMarqueeBox li:nth-of-type(odd){color: #fff; -webkit-text-stroke: 1px #000; text-stroke: 1px #000;}

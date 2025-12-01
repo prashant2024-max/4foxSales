@@ -23,6 +23,25 @@ $(document).ready(function () {
     $(".menu-overlay").remove();
   });
 
+  // Smooth scroll to anchor with 60px offset
+  $(document).on('click', '.headMenu ul > li > a', function (e) {
+    var href = $(this).attr('href');
+
+    if (href && href.indexOf('#') === 0) {
+      e.preventDefault();
+
+      var $target = $(href);
+      if ($target.length) {
+        var offset = 80;
+        var top = $target.offset().top - offset;
+
+        window.scrollTo({
+          top: top,
+          behavior: "smooth" // âœ… real smooth, no speed jump
+        });
+      }
+    }
+  });
 
   // $(document).ready(function () {
   // First Marquee - Left to Right
@@ -53,7 +72,7 @@ $(document).ready(function () {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 0,
-    speed: 3000,
+    speed: 5000,
     cssEase: "linear",
     infinite: true,
     arrows: false,
@@ -65,8 +84,8 @@ $(document).ready(function () {
       { breakpoint: 1600, settings: { slidesToShow: 5 } },
       { breakpoint: 1536, settings: { slidesToShow: 4 } },
       { breakpoint: 850, settings: { slidesToShow: 4 } },
-      { breakpoint: 611, settings: { slidesToShow: 3 } },
-      { breakpoint: 500, settings: { slidesToShow: 2 } },
+      { breakpoint: 611, settings: { slidesToShow: 4 } },
+      { breakpoint: 500, settings: { slidesToShow: 1 } },
     ],
   });
   // });
@@ -148,7 +167,7 @@ $(document).ready(function () {
           responsive: [
             // { breakpoint: 1600, settings: { slidesToShow: 5 } },
             // { breakpoint: 1536, settings: { slidesToShow: 4 } },
-            { breakpoint: 821, settings: { slidesToShow: 2 } },
+            { breakpoint: 820, settings: { slidesToShow: 2 } },
             { breakpoint: 610, settings: { slidesToShow: 1 } },
           ],
         });
@@ -167,7 +186,7 @@ $(window).resize(initLateUpSlider); // run on resize
 
   // marketing Marquee - Right to Left (reverse direction)
   $(".markMarqueeBox").slick({
-    slidesToShow: 4.3,
+    slidesToShow:4.5,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 0,
@@ -177,11 +196,12 @@ $(window).resize(initLateUpSlider); // run on resize
     arrows: false,
     dots: false,
     responsive: [
-      { breakpoint: 1600, settings: { slidesToShow: 3.5 } },
+      { breakpoint: 1729, settings: { slidesToShow: 4 } },
+      { breakpoint: 1681, settings: { slidesToShow: 4 } },
       { breakpoint: 1300, settings: { slidesToShow: 4 } },
       { breakpoint: 821, settings: { slidesToShow: 3 } },
       { breakpoint: 611, settings: { slidesToShow: 3 } },
-      { breakpoint: 500, settings: { slidesToShow: 2 } },
+      { breakpoint: 500, settings: { slidesToShow: 2.5 } },
     ],
   });
   

@@ -5,10 +5,16 @@
 }
 
 @media screen and (max-width:1680px) {
+    :root{
+        --fs-90: 84px;
+    }
+
     .psCaseStudyWrapper {max-width: 1640px;margin-left: auto;}
 }
 
 @media screen and (max-width:1600px) {
+    :root {--fs-90: 78px;}
+
     .main-wrapper{max-width: calc(1540px - 30px); padding: 0 15px;}
 
     .psOurSolGallry{grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));}
@@ -48,6 +54,8 @@
 }
 
 @media screen and (max-width:1440px) {
+    :root {--fs-90: 74px;}
+
     .main-wrapper{padding: 0 30px;}
 
     .psWhoWeImg{margin-top: 3.25em;}
@@ -64,6 +72,8 @@
 }
 
 @media screen and (max-width:1366px) {
+    :root {--fs-90: 68px;}
+
     .psHeroImgVid {max-width: 580px;}
 
     .psCounterItem {max-width: 300px;}
@@ -78,6 +88,8 @@
 }
 
 @media screen and (max-width:1280px) {
+    :root {--fs-90: 68px;}
+
     .psFooteBox1 {max-width: 235px;width: 100%;}
     .psFooteBox2 {max-width: max-content; width: 100%;}
     .psFooteBox4 {max-width: 245px;width: 100%;}
@@ -246,6 +258,8 @@
 }
 
 @media screen and (max-width:768px) {
+    :root {--fs-90: 48px;}
+
     .psHeroTxtInfo{flex-wrap: wrap;}
     .psHeroTxt { max-width: 100%; width: 100%; padding: 50px 0;}
     .psHeroImgVid{ max-width: 100%; margin: auto;}
@@ -260,17 +274,19 @@
     .winImgUp{margin-right: 3em; max-width: 120px;}
     .winImgDown{margin-left: 3em; max-width: 170px;}
 
-    .trustedBySliders{flex-wrap: wrap; gap: 3em;}
+    .trustedBySliders{flex-wrap: wrap; gap: 2em;}
     .trustedBySliderLft {max-width: 100%;}
     .trustedBySliderRgt {max-width: 100%;}
     .trustedBySliderRgtCont{max-width: 100%; width: 100%;}
+
+    .trustedByIcons{gap: 0.875em;margin-top: 145px;}
 
 }
 
 @media screen and (max-width:610px) {
     :root{
         --fs-120: 60px;
-        --fs-90: 45px;
+        --fs-90: 40px;
         --fs-h: 34px;
         --fs-44: 26px;
         --fs-40: 24px;
@@ -298,6 +314,8 @@
 
     .caseStudySlideBox .draggable {padding-right: 0px;}
     .caseStudyItem {margin: 0 12px;}
+
+    .latestUpdatesBtn {margin-top: 20px;}
 }
 
 
@@ -338,6 +356,17 @@
     .vidSec {padding: 70px 0;}
     .videoContent .absolute:has(img) {max-width: 70px;}
     .videoContent .absolute.bottom {bottom: -25%;}
+
+    .campaignsDesc > p{line-height: 1.645;}
+    .campaigns > li {gap: 10px;}
+
+    .trustedBySliders {flex-wrap: wrap;gap: 1em;}
+    .trustedBySliderLft.slick-slider button, .trustedBySliderRgt.slick-slider button{width: 46px; height: 46px;}
+    .trustedBySliderLft.slick-slider button.slick-next, .trustedBySliderRgt.slick-slider button.slick-next {
+    background-image: url(../images/sliderRgtBtn.png); left: calc(0px + 58px);}
+    .trustedBySliderLft.slick-slider button, .trustedBySliderRgt.slick-slider button{top: calc(100% + 25px + calc(58px / 2));}
+
+    .latestUpdatesCardsBox{margin-top: 0;}
 
     .psOurSolGallry{margin-top: 3.1em;}
 
