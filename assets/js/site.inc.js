@@ -125,24 +125,37 @@ $(document).ready(function () {
     arrows: false,
     dots:true,
     autoplay: true,
-    autoplaySpeed: 3000
+    autoplaySpeed: 3000,
+    responsive: [
+      // { breakpoint: 1600, settings: { slidesToShow: 5 } },
+      // { breakpoint: 1536, settings: { slidesToShow: 4 } },
+      { breakpoint: 821, settings: { slidesToShow: 2 } },
+      { breakpoint: 610, settings: { slidesToShow: 2 } },
+      { breakpoint: 500, settings: { slidesToShow: 1 } },
+    ],
   });
 
   function initLateUpSlider() {
     if ($(window).width() <= 820) {
-      if (!$('.latestUpdatesCards').hasClass('slick-initialized')) {
-        $('.latestUpdatesCards').slick({
+      if (!$('.latestUpdatesCardsBox ').hasClass('slick-initialized')) {
+        $('.latestUpdatesCardsBox ').slick({
           slidesToShow: 2,
           slidesToScroll: 1,
           arrows: false,
           dots: true,
           autoplay: true,
-          autoplaySpeed: 3000000
+          autoplaySpeed: 3000000,
+          responsive: [
+            // { breakpoint: 1600, settings: { slidesToShow: 5 } },
+            // { breakpoint: 1536, settings: { slidesToShow: 4 } },
+            { breakpoint: 821, settings: { slidesToShow: 2 } },
+            { breakpoint: 610, settings: { slidesToShow: 1 } },
+          ],
         });
       }
     } else {
-    if ($('.latestUpdatesCards').hasClass('slick-initialized')) {
-      $('.latestUpdatesCards').slick('unslick'); // disable above 820px
+    if ($('.latestUpdatesCardsBox ').hasClass('slick-initialized')) {
+      $('.latestUpdatesCardsBox ').slick('unslick'); // disable above 820px
     }
   }
 }
@@ -166,7 +179,7 @@ $(window).resize(initLateUpSlider); // run on resize
     responsive: [
       { breakpoint: 1600, settings: { slidesToShow: 3.5 } },
       { breakpoint: 1300, settings: { slidesToShow: 4 } },
-      { breakpoint: 850, settings: { slidesToShow: 4 } },
+      { breakpoint: 821, settings: { slidesToShow: 3 } },
       { breakpoint: 611, settings: { slidesToShow: 3 } },
       { breakpoint: 500, settings: { slidesToShow: 2 } },
     ],

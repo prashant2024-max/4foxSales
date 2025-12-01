@@ -145,6 +145,7 @@
 
 
 /* Latest Update */
+.latestUpdatesCardsBox{display: flex; gap: 52px; margin: 50px 0;}
 .latestUpdatesCards{gap: 3.25em;margin-block: calc(var(--secGap) / 2);}
 .latestUpdatesCard{border-radius: 20px;background-color: var(--bg-tertiary);overflow: hidden;transition: all 0.3s;}
 .latestUpdatesCardImg{overflow: hidden;}
@@ -157,6 +158,9 @@
 .latestUpdatesCardTitle > *{font-size: var(--fs-22);color: var(--primary-txt);font-family: var(--primary-font-bold);}
 .latestUpdatesCardDesc{margin-top: 1.05em;}
 .latestUpdatesCardDesc > p{font-size: var(--fs-17);font-family: var(--primary-font-light);line-height: 1.875;color: var(--primary-txt);opacity: 0.7;}
+.latestUpdatesBtn .comBtn{color: #91602F;}
+.latestUpdatesBtn .comBtn span svg path{stroke: #91602F;}
+.latestUpdatesBtn .comBtn{background: transparent; border:2px solid #91602F;}
 /* .latestUpdatesBtn > a{} */
 
 /* Best Campaigns */
