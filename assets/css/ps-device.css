@@ -94,6 +94,10 @@
     .psFooteBox2 {max-width: max-content; width: 100%;}
     .psFooteBox4 {max-width: 245px;width: 100%;}
     .psFooteBox5 {max-width: 300px;width: 100%;}
+
+    .psCounterItem {max-width: 290px;}
+    .psCounterImg {max-width: 94px;}
+    .psCounterTxt > h2{line-height: 40px;}
 }
 
 @media screen and (max-width:1200px) {
@@ -223,6 +227,33 @@
     .psCounterItem {max-width: 49%;}
     .psCounterImg {max-width: 155px;}
 
+    .psMarquee2Box li, .psMarquee1Box li {margin-inline: 3em;}
+
+    .ourSolText {padding-left: 0.75em;}
+    .ourSolText > p{
+        display: -webkit-box !important;
+        -webkit-line-clamp: 1 !important;
+        -webkit-box-orient: vertical !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        line-height: 1.7 !important;
+        max-height: calc(1.7em * 1) !important;
+        min-height: calc(1.7em * 1) !important;
+    }
+
+    .ourSolText > h3{
+        display: -webkit-box !important;
+        -webkit-line-clamp: 2 !important;
+        -webkit-box-orient: vertical !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        line-height: 1.4 !important;
+        max-height: calc(1.4em * 2) !important;
+        min-height: calc(1.4em * 2) !important;
+    }
+
+    
+
     .psWhoWeHeadImg { max-width: 45%; width: 100%;}
     .psWhoWeImg {margin-top: 1.25em;}
     .whoWeText > p{padding-right: 0;}
@@ -230,6 +261,8 @@
     .psText1Img {max-width: 55%;width: 100%;}
     .whoWeRightShape {max-width: 30%;}
     .psTextImg2 {max-width: 28%;}
+
+
 
     .psIndusType{gap: 23px;}
     .psIndusTypeItem {max-width: calc(25% - 18px);}
@@ -309,6 +342,8 @@
     .psFooterInfo {justify-content: start; column-gap: 20px; row-gap: 40px;}
     .psFooteBox1, .psFooteBox2, .psFooteBox3, .psFooteBox4, .psFooteBox5 {max-width: calc(50% - 10px);width: 100%;}
 
+    .psMarquee2Box li, .psMarquee1Box li {margin-inline: 30px;}
+
     .psOurSolItem {width: 100%; max-width: 100%;}
     .trustedByIcon {max-width: calc(24.666667% - 0.55em);background-color: #F5F8FC;border-radius: 20px;}
 
@@ -333,9 +368,24 @@
     .psCounterItem {max-width: 100%;}
     .psCounterImg {max-width: 140px;}
 
+    .psMarquee2Box li, .psMarquee1Box li {margin-inline: 25px;}
+
     .psWhoWeInfoBox{flex-wrap: wrap;}
     .psWhoWeHeadImg {max-width: 100%;width: 100%; margin-bottom: 70px;}
     .psWhoWeImgText {max-width: 100%;width: 100%;}
+
+    .psOurSolGallry {flex-wrap: wrap; margin-top: 2.1em;}
+    .psSolItemBox{max-width: 100%;}
+    .ourSolText > h3 {
+        display: -webkit-box !important;
+        -webkit-line-clamp: 1 !important;
+        -webkit-box-orient: vertical !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        line-height: 1.4 !important;
+        max-height: calc(1.4em * 1) !important;
+        min-height: calc(1.4em * 1) !important;
+    }
 
     .winImgUp {margin-right: 0em; max-width: 100px;}
     .winImgDown { margin-left: 1em; max-width: 120px;}
@@ -367,8 +417,6 @@
     .trustedBySliderLft.slick-slider button, .trustedBySliderRgt.slick-slider button{top: calc(100% + 25px + calc(58px / 2));}
 
     .latestUpdatesCardsBox{margin-top: 0;}
-
-    .psOurSolGallry{margin-top: 3.1em;}
 
     .campaignsContent{flex-wrap: wrap;}
     .campaignsTxt {max-width: 100%;}
@@ -409,10 +457,12 @@
     .psCounterImg {max-width: 110px;}
     .psCounterTxt > h2{line-height: 30px;}
 
-    .comSecHead > h2 {line-height: 35px;}
+    .comSecHead > h2 {line-height: 30px;}
+
+    .psCounterTxt > p{line-height: 23px;}
 
     .psIndusTypeItem{padding: 15px 10px;}
-    .IndusTypeImg {width: 60px; height: 60px; padding: 1em; margin-bottom: 0.5em;}
+    .IndusTypeImg {width: 50px; height: 50px; padding: 16px; margin-bottom: 0.5em;}
     .psIndusTypeItem > p{line-height: 25px;}
 
     .winImgUp{max-width: 85px;}
@@ -428,11 +478,13 @@
 }
 
 @media screen and (max-width:395px){
-  
+    :root{
+        --fs-h: 26px;
+    }
 }
 
 @media screen and (max-width:375px) {
-  
+
 }
 @media screen and (max-width:360px){
   

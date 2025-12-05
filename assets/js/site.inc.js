@@ -58,11 +58,12 @@ $(document).ready(function () {
     pauseOnHover: false,
     variableWidth: false,
     responsive: [
-      { breakpoint: 1600, settings: { slidesToShow: 5 } },
-      { breakpoint: 1300, settings: { slidesToShow: 4 } },
+      { breakpoint: 1600, settings: { slidesToShow: 6 } },
+      // { breakpoint: 1536, settings: { slidesToShow: 5 } },
+      { breakpoint: 1300, settings: { slidesToShow: 5 } },
       { breakpoint: 850, settings: { slidesToShow: 4 } },
-      { breakpoint: 611, settings: { slidesToShow: 3 } },
-      { breakpoint: 500, settings: { slidesToShow: 2 } },
+      { breakpoint: 611, settings: { slidesToShow: 4 } },
+      { breakpoint: 500, settings: { slidesToShow: 3 } },
     ],
   });
 
@@ -81,11 +82,12 @@ $(document).ready(function () {
     variableWidth: false,
     rtl: true, // 👈 this makes it scroll in the opposite direction
     responsive: [
-      { breakpoint: 1600, settings: { slidesToShow: 5 } },
-      { breakpoint: 1536, settings: { slidesToShow: 4 } },
-      { breakpoint: 850, settings: { slidesToShow: 4 } },
+      { breakpoint: 1600, settings: { slidesToShow: 6 } },
+      // { breakpoint: 1536, settings: { slidesToShow: 5 } },
+      { breakpoint: 1300, settings: { slidesToShow: 5.5 } },
+      { breakpoint: 850, settings: { slidesToShow: 4.5 } },
       { breakpoint: 611, settings: { slidesToShow: 4 } },
-      { breakpoint: 500, settings: { slidesToShow: 1 } },
+      { breakpoint: 500, settings: { slidesToShow: 3 } },
     ],
   });
   // });
@@ -208,5 +210,69 @@ $(window).resize(initLateUpSlider); // run on resize
   // });
 
   $(".markMarqueeBox").slick("slickPlay");
+
+  // Counter Animation with Enhanced Effects
+  let counterStarted = false;
+
+  function animateCounters() {
+    // Add fade-in animation to counter items
+    $(".psCounterItem").each(function (index) {
+      $(this).delay(index * 150).animate({ opacity: 1 }, 300);
+    });
+
+    // Animate counter numbers
+    $(".psCounterTxt h2").each(function () {
+      let $this = $(this);
+      let finalValue = $this.text().replace(/[^0-9]/g, "");
+      let suffix = $this.text().replace(/[0-9]/g, "");
+
+      $this.prop("counter", 0).animate(
+        { counter: finalValue },
+        {
+          duration: 3000,
+          easing: "swing",
+          step: function (now) {
+            $this.text(Math.ceil(now) + suffix);
+          },
+          complete: function () {
+            $this.text(finalValue + suffix);
+          },
+        }
+      );
+    });
+
+    // Log message when counter starts
+    console.log("🚀 Counter animation started!");
+  }
+
+  // Trigger counter animation when counter section comes into view
+  $(window).on("scroll", function () {
+    if (!counterStarted) {
+      let $counterSection = $(".psCouterSec");
+      let sectionTop = $counterSection.offset().top;
+      let windowHeight = $(window).height();
+      let scrollPos = $(this).scrollTop();
+
+      // Trigger when section is 75% visible in viewport
+      if (scrollPos + windowHeight * 0.75 >= sectionTop) {
+        // Add active class to counter section
+        $counterSection.addClass("counter-active");
+        
+        // Call animation
+        animateCounters();
+        counterStarted = true;
+
+        console.log("✅ Counter section entered viewport - Starting animation");
+      }
+    }
+  });
+
+  // Initial opacity set for counter items (before animation)
+  $(".psCounterItem").css("opacity", "0.6");
+
+  // Ensure counter section has proper styling
+  $(".psCouterSec").css("transition", "all 0.5s ease");
+
+
 
 });
